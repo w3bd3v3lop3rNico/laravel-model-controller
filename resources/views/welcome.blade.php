@@ -2,6 +2,9 @@
 
 @section('main')
 
-    <h1>{{ $paperino }}</h1>
+   @forelse($movies as $movie)
+   <h1>{{ $movie->title }}</h1>
+   @empty
 
+   @endforelse
 @endsection
